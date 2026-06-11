@@ -117,6 +117,13 @@
 </main>
 <a class="floating-line" href="#contact">LINE相談</a>
 <footer class="footer"><div class="container"><p><strong>Cattery cono cono OUCHI</strong> ｜ 北海道函館市 ｜ 動物取扱業：販売 北海道第022210393号 ｜ 動物取扱責任者：平井 奈津子 ｜ 有効期限：令和10年1月31日</p><p>詳細住所は見学予約時にご案内いたします。</p></div></footer>
-<script src="script.js"></script>
+<script>
+document.querySelectorAll('[data-toggle]').forEach(button => {
+  button.addEventListener('click', () => {
+    const target = document.querySelector(button.dataset.toggle);
+    if (target) target.classList.toggle('open');
+  });
+});
+</script>
 </body>
 </html>
